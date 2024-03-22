@@ -17,13 +17,26 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 10vw;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+}
+
+.options__wrapper {
+    margin: 0 auto;
 }
 
 .option {
     margin-left: 20px;
 }
 
-.options__wrapper {
+.options__item {
     display: flex;
     align-items: center;
     margin: 10px 0;
