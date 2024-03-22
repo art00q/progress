@@ -1,0 +1,95 @@
+.hide {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option {
+    margin-left: 20px;
+}
+
+.options__wrapper {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.options__input {
+    width: 42px;
+    height: 32px;
+    padding: 0 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+.switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+  
+.switch input {
+    display: none;
+}
+  
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+  
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+  
+input:checked + .slider {
+    background-color: #66bb6a;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+@media (max-width: 426px) {
+    .circle {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="wrapper">
+        <div class="circle">
+          <canvas id="canvas" width="250px" height="250px"></canvas>
+          <div class="options">
+            <div class="options__wrapper">
+              <input type="text" class="options__input" id="input" min="0" max="100" value="60">
+              <label class="option" for="input">
+                Value
+              </label>
+            </div>
+            <div class="options__wrapper">
+              <label class="switch">
+                <input type="checkbox" class="options__animate" id="animate">
+                <span class="slider round"></span>
+              </label>
+              <label class="option" for="animate">
+                Animate
+              </label>
+            </div>
+            <div class="options__wrapper">
+              <label class="switch">
+                <input type="checkbox" class="options__hide" id="hide">
+                <span class="slider round"></span>
+              </label>
+              <label class="option" for="hide">
+                Hide
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./script.js"></script>    
+  </body>
+</html>
