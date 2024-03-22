@@ -31,8 +31,6 @@ export default function init() {
           event.target.value = 0;
         };
     
-        setTimeout(() => {
-          draw(event.target.value)
-        }, 300);
+        draw(event.target.value)
     })
 }
